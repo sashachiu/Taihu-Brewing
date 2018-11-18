@@ -1,24 +1,649 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TDi-ue-pJv">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--page1-->
+        <scene sceneID="Bl0-rM-Rz5">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController title="page1" id="hY6-sc-SGp" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="u5g-Ak-EMH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VxT-TF-XLM">
+                                <rect key="frame" x="67" y="186" width="240" height="113"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rfg-UY-QrD">
+                                        <rect key="frame" x="-3" y="8" width="246" height="98"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <state key="normal" title="酒花飛高高">
+                                            <color key="titleColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="qOe-VA-3qx" kind="show" id="vIl-Fb-1uK"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="section icon" translatesAutoresizingMaskIntoConstraints="NO" id="yf1-V1-S8x">
+                                        <rect key="frame" x="224" y="85" width="33" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.96471889269406375" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sdN-dS-fZz">
+                                <rect key="frame" x="67" y="350" width="240" height="113"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XTX-Xw-mYh">
+                                        <rect key="frame" x="8" y="7" width="224" height="98"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <state key="normal" title="限定系列">
+                                            <color key="titleColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="akz-oy-JmQ" kind="show" id="MNC-2d-anc"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="section icon" translatesAutoresizingMaskIntoConstraints="NO" id="qvS-rw-3y3">
+                                        <rect key="frame" x="224" y="85" width="33" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.9647188927" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RZ7-qg-GmI">
+                                <rect key="frame" x="67" y="514" width="240" height="113"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wwD-6z-Uv0">
+                                        <rect key="frame" x="8" y="7" width="224" height="98"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <state key="normal" title="尋寶地圖">
+                                            <color key="titleColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="xrn-Sf-9a1" kind="show" id="raa-2u-1zL"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="section icon" translatesAutoresizingMaskIntoConstraints="NO" id="r6e-GO-mfN">
+                                        <rect key="frame" x="224" y="84" width="33" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.9647188927" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="4zC-NJ-FpQ"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Series" image="tab icon" id="Mjv-zF-cey"/>
+                    <navigationItem key="navigationItem" id="avZ-Co-eXV"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ib0-Me-Buj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="2494" y="96"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="ggs-Wx-xaz">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="TDi-ue-pJv" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" tag="1" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cr2-WW-aZn">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="uio-6s-vU2" kind="relationship" relationship="viewControllers" id="BTk-ll-Rdu"/>
+                        <segue destination="Ku4-P5-0oG" kind="relationship" relationship="viewControllers" id="aWd-uJ-ACL"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kEx-8m-2d2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="900" y="451"/>
+        </scene>
+        <!--Series-->
+        <scene sceneID="Gg6-uI-plV">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uio-6s-vU2" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Series" image="tab icon" id="NuS-Pu-7lv"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nqY-cq-lj5">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="hY6-sc-SGp" kind="relationship" relationship="rootViewController" id="ScK-g6-v6z"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EcI-94-ikT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1788" y="100"/>
+        </scene>
+        <!--尋寶指南-->
+        <scene sceneID="XqG-VC-AV8">
+            <objects>
+                <viewController id="xrn-Sf-9a1" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="V7t-aG-IsC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="酒花飛高高系列 尋寶指南" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TWy-Nb-eR9">
+                                <rect key="frame" x="38" y="128" width="309" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="XjL-v4-9SO">
+                                <rect key="frame" x="38" y="371" width="313" height="244"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">2018年的『酒花飛高高計畫』，準備讓你們每個月都有一支不一樣的Imperial IPA。 
+今年，我們搜刮了各產區不同品種的啤酒花，創造出一系列瘋狂的啤酒花奇幻旅程，每個月最後一個星期六，快跟著我們一起飛高高！ http://bit.ly/酒花飛高高尋寶指南</string>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="酒花這種東西就是愛上了就再也沒辦法回頭了。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="daE-TW-gCT">
+                                <rect key="frame" x="31" y="165" width="322" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cover" translatesAutoresizingMaskIntoConstraints="NO" id="wJw-g4-qiY">
+                                <rect key="frame" x="8" y="209" width="359" height="137"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="W0n-ih-oWM">
+                                <rect key="frame" x="13" y="627" width="359" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">☞ 開賣時間：每個月最後一個星期六 （確切日期以 臺虎精釀 Taihu Brewing 公告為主 ）
+☞ 販售地點：臺虎旗下門市及下列店家同步販售</string>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="5MF-Jt-DUE"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="尋寶指南" id="Rzk-aF-RQY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zrD-cZ-DSm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3292" y="-460"/>
+        </scene>
+        <!--酒花飛高高-->
+        <scene sceneID="Xfo-IG-OJd">
+            <objects>
+                <tableViewController id="qOe-VA-3qx" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="auL-hA-5ze">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <sections>
+                            <tableViewSection id="w7q-tv-nPR">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="3743" id="xc8-Fp-4WB">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="3743"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xc8-Fp-4WB" id="CHP-tq-k39">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="3742.6666666666665"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Hop Lanterns_11" translatesAutoresizingMaskIntoConstraints="NO" id="ab0-Cw-Dm0">
+                                                    <rect key="frame" x="22" y="11" width="330" height="330"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Su9-WZ-GgR">
+                                                    <rect key="frame" x="32" y="21" width="320" height="320"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <connections>
+                                                        <segue destination="MDJ-kg-1Ia" kind="show" id="neZ-9p-i1a"/>
+                                                    </connections>
+                                                </button>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Hop Lanterns_10" translatesAutoresizingMaskIntoConstraints="NO" id="5o8-Se-gzr">
+                                                    <rect key="frame" x="22" y="349" width="330" height="330"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Hop Lanterns_09" translatesAutoresizingMaskIntoConstraints="NO" id="dsS-56-JOn">
+                                                    <rect key="frame" x="22" y="687" width="330" height="330"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t2M-OJ-glT">
+                                                    <rect key="frame" x="29" y="687" width="320" height="330"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <connections>
+                                                        <segue destination="rVx-e9-fH0" kind="show" id="rcn-4q-sOs"/>
+                                                    </connections>
+                                                </button>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Hop Lanterns_07" translatesAutoresizingMaskIntoConstraints="NO" id="3bL-JT-QXG">
+                                                    <rect key="frame" x="22" y="1363" width="330" height="330"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jR4-YR-11y">
+                                                    <rect key="frame" x="23" y="1363" width="329" height="330"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <connections>
+                                                        <segue destination="fNK-GY-lYQ" kind="show" id="i2H-sR-exa"/>
+                                                    </connections>
+                                                </button>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Hop Lanterns_08" translatesAutoresizingMaskIntoConstraints="NO" id="X0u-BA-vfV">
+                                                    <rect key="frame" x="22" y="1025" width="330" height="330"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Hop Lanterns_06" translatesAutoresizingMaskIntoConstraints="NO" id="XgD-7A-Wez">
+                                                    <rect key="frame" x="22" y="1701" width="330" height="330"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Hop Lanterns_05" translatesAutoresizingMaskIntoConstraints="NO" id="ajw-yK-LjI">
+                                                    <rect key="frame" x="23" y="2039" width="330" height="330"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Hop Lanterns_04" translatesAutoresizingMaskIntoConstraints="NO" id="h87-Hy-fjN">
+                                                    <rect key="frame" x="23" y="2377" width="330" height="330"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Hop Lanterns_03" translatesAutoresizingMaskIntoConstraints="NO" id="WTP-mt-CVB">
+                                                    <rect key="frame" x="22" y="2715" width="330" height="330"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Hop Lanterns_02" translatesAutoresizingMaskIntoConstraints="NO" id="0Eu-Xo-Ezc">
+                                                    <rect key="frame" x="23" y="3055" width="330" height="330"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Hop Lanterns_01" translatesAutoresizingMaskIntoConstraints="NO" id="VNo-KO-xq2">
+                                                    <rect key="frame" x="22" y="3393" width="330" height="330"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="qOe-VA-3qx" id="sGV-Y7-85D"/>
+                            <outlet property="delegate" destination="qOe-VA-3qx" id="O0O-tg-cu6"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Series" image="tab icon" id="DFb-Rz-ue1"/>
+                    <navigationItem key="navigationItem" title="酒花飛高高" id="VR3-lQ-uf3"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vbd-6s-WLa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3292" y="214"/>
+        </scene>
+        <!--限定系列-->
+        <scene sceneID="4C4-gF-lYO">
+            <objects>
+                <tableViewController id="akz-oy-JmQ" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="es9-sf-Gyt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <sections>
+                            <tableViewSection id="HH9-ro-UaT">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="1027" id="Klo-6w-rBj">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1027"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Klo-6w-rBj" id="aLj-Ja-gEj">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="1026.6666666666667"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="限定＿03_雷夢撞擊-檸檬海鹽水果啤酒" translatesAutoresizingMaskIntoConstraints="NO" id="7II-Y6-s3x">
+                                                    <rect key="frame" x="22" y="687" width="330" height="330"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="限定＿02" translatesAutoresizingMaskIntoConstraints="NO" id="DNK-bw-Toz">
+                                                    <rect key="frame" x="22" y="349" width="330" height="330"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="限定＿01" translatesAutoresizingMaskIntoConstraints="NO" id="Csj-Up-0ng">
+                                                    <rect key="frame" x="22" y="11" width="330" height="330"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U5U-YW-h48">
+                                                    <rect key="frame" x="22" y="11" width="330" height="330"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <connections>
+                                                        <segue destination="yv8-X7-nmL" kind="show" id="MPT-dJ-wIC"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="akz-oy-JmQ" id="v6e-z3-99N"/>
+                            <outlet property="delegate" destination="akz-oy-JmQ" id="80M-h5-KX9"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="限定系列" id="pux-gd-zWM"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xea-mR-jgM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2494" y="766"/>
+        </scene>
+        <!--金香茶啤酒-->
+        <scene sceneID="Xng-oL-BK6">
+            <objects>
+                <tableViewController id="yv8-X7-nmL" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Gj3-lv-cnA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <sections>
+                            <tableViewSection id="5Rq-ux-0UT">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="1091" id="cgS-yR-Frp">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1091"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cgS-yR-Frp" id="Wer-iy-BVu">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="1090.6666666666667"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ppQ-oC-raS">
+                                                    <rect key="frame" x="33" y="385" width="326" height="298"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <string key="text">金香茶啤酒是臺虎精釀最新的茶啤酒力作，釀酒師特別前往阿里山茶園取材，選用高品質金萱茶，並加入特殊比例的半發酵茶葉增添香氣層次。  為完美呈現茶葉風味，特別以冷泡手法釀造，在啤酒熟成階段加入茶葉，讓酒液充分吸收茶香與茶韻，啜飲時先感受到撲鼻而來的茶香，入口金萱獨特的淡雅芬芳在舌尖散發，醇厚滑潤的茶韻與啤酒花香氣在味蕾交織，並保有麥芽酒體的微甜爽口，顛覆對啤酒的風味想像。</string>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="揉入阿里山金萱茶的「金香茶啤酒」" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4PB-jX-S5X">
+                                                    <rect key="frame" x="45" y="80" width="317" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" red="0.39357030389999997" green="0.50554382799999997" blue="0.184222579" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="7-ELEVEN 限定販售" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ud9-4m-QKR">
+                                                    <rect key="frame" x="72" y="27" width="259" height="54"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                    <color key="textColor" red="0.23001369830000001" green="0.35156542060000001" blue="0.12543129920000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hqd-vi-3pi">
+                                                    <rect key="frame" x="16" y="344" width="264" height="38"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <string key="text">ABV：4.5% 
+容量：330ml </string>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8jT-Cg-hv8">
+                                                    <rect key="frame" x="0.0" y="120" width="378" height="227"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lZX-B0-ExN">
+                                                            <rect key="frame" x="0.0" y="0.0" width="733" height="226"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <subviews>
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="限定＿01_內文01_711限定金香茶啤酒" translatesAutoresizingMaskIntoConstraints="NO" id="Fiw-7E-zsU">
+                                                                    <rect key="frame" x="5" y="4" width="359" height="218"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                </imageView>
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="限定＿01_內文02_金香茶啤酒" translatesAutoresizingMaskIntoConstraints="NO" id="DL7-0r-r22">
+                                                                    <rect key="frame" x="370" y="4" width="359" height="218"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                </imageView>
+                                                            </subviews>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <viewLayoutGuide key="safeArea" id="cem-mN-krR"/>
+                                                        </view>
+                                                    </subviews>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
+                                                            <size key="value" width="733" height="0.0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </scrollView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="限定＿01_內文03_金香茶啤酒" translatesAutoresizingMaskIntoConstraints="NO" id="owS-dy-3hR">
+                                                    <rect key="frame" x="16" y="709" width="340" height="205"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="為打造完美品飲體驗，酒標設計也是別出心裁，靈感取自於金萱茶產地嘉義梅山鄉茶園風景，當地海拔介於1,000公尺上下，終年雲霧繚繞，是台灣高山茶的始祖發源地。設計師用簡約色塊的手法完美呈現茶園景色。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Luq-bT-Qzl">
+                                                    <rect key="frame" x="35" y="941" width="311" height="142"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="yv8-X7-nmL" id="809-Kp-0v2"/>
+                            <outlet property="delegate" destination="yv8-X7-nmL" id="tFj-jC-yVR"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="金香茶啤酒" id="lX3-hK-fr8"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BIg-Fe-T77" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3292" y="887"/>
+        </scene>
+        <!--Special-->
+        <scene sceneID="6cv-Kk-QFS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ku4-P5-0oG" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Special" image="tab icon" id="h4p-35-6u2"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Lyt-8G-f6r">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="akz-oy-JmQ" kind="relationship" relationship="rootViewController" id="oqG-U0-Qhm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M6P-pi-Xja" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1788" y="766"/>
+        </scene>
+        <!--Hop Lanterns - 11-->
+        <scene sceneID="yT3-uD-KgS">
+            <objects>
+                <viewController id="MDJ-kg-1Ia" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CYm-N1-hik">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Imperial IPA：9% " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zeE-Io-YUP">
+                                <rect key="frame" x="32" y="308" width="101" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ekuanot and Wakatu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fSo-TH-LPm">
+                                <rect key="frame" x="73" y="122" width="266" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <color key="textColor" red="0.77944284679999998" green="0.2086187005" blue="0.36469686029999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Hop Lanterns_11_cover" translatesAutoresizingMaskIntoConstraints="NO" id="iKx-La-r9v">
+                                <rect key="frame" x="6" y="184" width="362" height="125"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rTz-df-LD6">
+                                <rect key="frame" x="32" y="553" width="314" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">☞開賣時間：11月24日(六) ☞開賣地點：  -啜飲室 Landmark 台北市信義區忠孝東路五段68號 (02)2722-0592  -Driftwood 西門町 台北市萬華區昆明街46號 (02)2388-3699  -啜飲室 台中  台中市西區中興一巷22號 (04)2305-5568 及其他飛行夥伴們。</string>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" address="YES"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j3y-JO-bjW">
+                                <rect key="frame" x="20" y="338" width="336" height="207"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">11月的酒花飛高高，將風味濃郁、回甘的 wit IPA 包裹住 Ekuanot 和 Wakatu 兩種酒花斑斕絢麗的香味層次，一層一層地喚醒香瓜、莓果、柑橘皮、萊姆以及辛香氣息，最後再加入蔓越莓增添微酸口感。 
+和感恩節火雞大餐最完美合拍的，就是本月的酒花飛高高啊～</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="4fz-4Y-WSA"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Hop Lanterns - 11" id="zVa-Vs-u8p"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jvi-ew-IkW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4068" y="-460"/>
+        </scene>
+        <!--Hop Lanterns - 09-->
+        <scene sceneID="zeN-eh-AiT">
+            <objects>
+                <viewController id="rVx-e9-fH0" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ulY-HL-Zdu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Imperial IPA：9% " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zdZ-cR-OVc">
+                                <rect key="frame" x="32" y="308" width="101" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Hop Lanterns_09_cover" translatesAutoresizingMaskIntoConstraints="NO" id="rGq-EV-eRn">
+                                <rect key="frame" x="6" y="184" width="362" height="125"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yL0-4y-Ram">
+                                <rect key="frame" x="31" y="346" width="326" height="302"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">9月酒花飛高高，要帶你飛向宇宙，浩瀚無垠～ 
+神秘的銀河總是多變難懂，所以這次要出乎你意料推出酸的IPA！
+　
+將麥芽經過酸化處理後，再大量冷泡 Galaxy 啤酒花，保留了濃郁強烈的熱帶水果香味，與透水多汁的柑橘芬芳。入口的清爽果酸氣息，就像大咬一口百香果，但是真的真的沒有加水果！別以為它是輕鬆怡人小清新，不知不覺就會引爆你的小宇宙～</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Galaxy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kyn-Ru-cIw">
+                                <rect key="frame" x="145" y="122" width="99" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <color key="textColor" red="0.12964043021202087" green="0.29906296730041504" blue="0.54904931783676147" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="RoM-TN-3VL"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Hop Lanterns - 09" id="upI-rD-BLa"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9u4-WC-GFC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4068" y="214"/>
+        </scene>
+        <!--Hop Lanterns - 07-->
+        <scene sceneID="JJV-VA-CZE">
+            <objects>
+                <viewController id="fNK-GY-lYQ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pJX-oE-LYG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Imperial IPA：9% " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hrp-bj-Hk2">
+                                <rect key="frame" x="32" y="308" width="101" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Hop Lanterns_07_cover" translatesAutoresizingMaskIntoConstraints="NO" id="0Su-sW-JQy">
+                                <rect key="frame" x="6" y="184" width="362" height="125"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="7月酒花飛高高，這個月，來自紐西蘭特有的Nelson Sauvin酒花當主角，強烈的鳳梨、熱帶水果香氣及些微松針風味，搭配燕麥豐潤滑順的口感，就像是顆熱帶水果炸彈，不只在口裡清爽爆炸，更讓內心的小火山大爆發！" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vgA-eq-IbQ">
+                                <rect key="frame" x="31" y="346" width="326" height="302"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nelson Sauvin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="avr-xU-Hsq">
+                                <rect key="frame" x="109" y="122" width="194" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <color key="textColor" red="0.29769361019134521" green="0.630806565284729" blue="0.65491288900375366" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="qTa-hM-k7x"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Hop Lanterns - 07" id="Sim-DA-XTP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wjz-aQ-Uny" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4068" y="887"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Hop Lanterns_01" width="600" height="599"/>
+        <image name="Hop Lanterns_02" width="600" height="601"/>
+        <image name="Hop Lanterns_03" width="598" height="600"/>
+        <image name="Hop Lanterns_04" width="600" height="599"/>
+        <image name="Hop Lanterns_05" width="600" height="601"/>
+        <image name="Hop Lanterns_06" width="1241" height="1242"/>
+        <image name="Hop Lanterns_07" width="546" height="546"/>
+        <image name="Hop Lanterns_07_cover" width="1402" height="474"/>
+        <image name="Hop Lanterns_08" width="960" height="960"/>
+        <image name="Hop Lanterns_09" width="1190" height="1190"/>
+        <image name="Hop Lanterns_09_cover" width="1403" height="474"/>
+        <image name="Hop Lanterns_10" width="601" height="539"/>
+        <image name="Hop Lanterns_11" width="1190" height="1190"/>
+        <image name="Hop Lanterns_11_cover" width="1698" height="580"/>
+        <image name="cover" width="1920" height="725"/>
+        <image name="section icon" width="72" height="72"/>
+        <image name="tab icon" width="32" height="32"/>
+        <image name="限定＿01" width="960" height="960"/>
+        <image name="限定＿01_內文01_711限定金香茶啤酒" width="980" height="653"/>
+        <image name="限定＿01_內文02_金香茶啤酒" width="980" height="653"/>
+        <image name="限定＿01_內文03_金香茶啤酒" width="3597" height="2398"/>
+        <image name="限定＿02" width="1000" height="1000"/>
+        <image name="限定＿03_雷夢撞擊-檸檬海鹽水果啤酒" width="1000" height="1000"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="MNC-2d-anc"/>
+    </inferredMetricsTieBreakers>
 </document>
